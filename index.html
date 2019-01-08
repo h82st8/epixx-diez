@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Diez</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <span class="logo__header">Diez</span>
+    <a href="#" class="toggler" id="toggler"><span></span></a>
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#lessons" class="nav__link">Направления</a></li>
+        <li class="nav__item"><a href="#advantages" class="nav__link">О школе</a></li>
+        <li class="nav__item"><a href="#video" class="nav__link">Видео</a></li>
+        <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+  
+    <section class="promo">
+      <div class="promo__wrap">
+        <h1 class="promo_title"><span class="title__full">Diez &#8212; </span><span class="title__first-letter"> ш</span>кола музыкального искусства</h1>
+        <span class="slogan">Научим петь, играть на инструментах, получать удовольствие от музыки и не бояться сцены</span>
+      </div>
+      <button class="promo__btn">Вводный урок</button>
+      <form class="form__trial">
+        <h4 class="form__title">Вводный урок</h4>
+        <span class="form__text">Попробуй любые направления бесплатно</span>
+        <input class="form__input_txt" type="text" name="name" placeholder="Имя">
+        <input class="form__input_txt" type="text" name="phone" placeholder="Телефон">
+        <select class="form__input_txt select" name="lessons" id="">
+          <option value="" style='display:none;'>Направления</option>
+          <option class="form__option" value="">Гитара</option>
+          <option class="form__option" value="">Вокал</option>
+          <option class="form__option" value="">Фортепиано</option>
+        </select>
+        <input class="form__btn" type="submit" value="Записаться">
+      </form>
+    </section>
+      
+    <section id="lessons" class="section__container lessons">
+      <h2 class="title title__lessons">Растим музыкантов</h2>
+      
+      <div class="lessons__vocal inner pl">
+        <h3 class="subtitle">Вокал</h3>
+        <span class="inner__text inner__text_vocal"></span>
+        <!-- <span class="inner__wdsrcn_text">
+          Академический, рок, эстрадный, джазовый
+        </span> -->
+      </div>
+      
+      <div class="lessons__guitar inner pl">
+        <h3 class="subtitle">Гитара</h3>
+        <span class="inner__text inner__text_guitar"></span>
+        <!-- <span class="inner__wdsrcn_text">
+          Хочешь играть как Джимми Хендрикс, Би Би Кинг или Андрес Сеговия - мы научим
+        </span> -->
+        <span class="lessons__price">1 урок от 800&#8381;</span>
+      </div>
+      
+      <div class="lessons__piano inner inner__small pl">
+        <h3 class="subtitle">Фортепиано</h3>
+        <span class="inner__text inner__text_piano"></span>
+        <!-- <span class="inner__wdsrcn_text">
+          Академический, рок, эстрадный, джазовый
+        </span> -->
+      </div>
+      
+      <div class="lessons__lections pl">
+        <h3 class="subtitle">Лекции</h3>
+        <span class="inner__text lection_txt">Подтяни свои знания в теории музыки</span>
+      </div>
+      
+      <button class="section__btn pl">
+        <span class="lessons__all btn-text">Все<br>направления</span>
+      </button>
+    </section>
+
+    <section id="advantages" class="section__container advantages">
+      <div class="advantages__col_2">
+        <h2 class="title title__advantages">Задаем темп</h2>
+      
+      <div class="advantages__team inner">
+        <h3 class="subtitle">Состав</h3>
+        <span class="inner__text inner__text_team"></span>
+        <!-- <span class="inner__wdsrcn_text inner__text_adv">
+          Тебя будут обучать профессионалы с высшим музыкальным образованием
+        </span> -->
+      </div>
+      
+      <div class="advantages__result inner">
+        <h3 class="subtitle">Результат</h3>
+        <span class="inner__text inner__text_result"></span>
+        <!-- <span class="inner__wdsrcn_text inner__text_adv">
+          Выступи на отчетном концерте через три месяца обучения
+        </span> -->
+      </div>
+      </div>
+      
+      <div class="advantages__studio inner inner__small">
+        <h3 class="subtitle">Студия</h3>
+        <span class="inner__text inner__text_studio"></span>
+        <!-- <span class="inner__wdsrcn_text inner__text_adv">
+          Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно
+        </span> -->
+      </div>
+
+      <form class="form__trial advantages__form">
+        <h4 class="form__title">Вводный урок</h4>
+        <span class="form__text form__text_adv">Попробуй любые направления бесплатно</span>
+        <input class="form__input_txt" type="text" name="name" placeholder="Имя">
+        <input class="form__input_txt" type="text" name="phone" placeholder="Телефон">
+        <select class="form__input_txt select" name="lessons" id="">
+          <option value="" style='display:none;'>Направления</option>
+          <option class="form__option" value="">Гитара</option>
+          <option class="form__option" value="">Вокал</option>
+          <option class="form__option" value="">Фортепиано</option>
+        </select>
+        <input class="form__btn" type="submit" value="Записаться">
+      </form>
+      
+      <button class="section__btn advantages__btn">
+        <span class="advantages__trial btn-text">Вводный<br>урок</span>
+      </button>
+    </section>
+
+    <section id="video" class="section__container video">
+      <div class="wrap__title_video">
+        <h2 class="title title_video">В стенах школы</h2>
+      </div>
+        
+      <div class="carousel">
+        <div class="carousel__item"><img src="img/video_card_img_1.png" alt="Зимняя вишня"></div>
+        <div class="carousel__item"><img src="img/video_card_img_2.png" alt="Янг Чжо"></div>
+        <div class="carousel__item"><img src="img/video_card_img_3.png" alt="Летний Штиль"></div class="carousel__item">
+        <div><img src="img/video_card_img_4.png" alt="Сергей Трофимов"></div>
+      </div>
+      
+      <div class="video__wide">
+        <h3 class="subtitle subtitle_video">Зимняя вишня</h3>
+        <span class="inner__text">
+          Заключительный зимний концерт 2017 годы выступало 97 учеников
+        </span>
+      </div>
+
+      <div class="video__inner">
+        <div class="video__small solo">
+          <h5 class="video__subtitle">Янг Чжо</h5>
+          <span class="inner__text video__text">Репетиция сольной партии скрипки</span>
+        </div>
+        <div class="video__small concert">
+          <h5 class="video__subtitle">Летний стиль</h5>
+          <span class="inner__text video__text">За кулисами концерта</span>
+        </div>
+        <div class="video__small bart">
+          <h5 class="video__subtitle">Сергей Трофимов</h5>
+          <span class="inner__text video__text">ЛЮБЭ - Выйду в поле с конем</span>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="contacts" class="section contacts">
+      <h2 class="title title__address">Ждем тебя</h2>
+      <span class="address">СПб, 6-я Линия ВО 42
++7 (812) 566 56 56</span>
+
+
+
+
+      <form class="form__trial advantages__form video__form">
+        <h4 class="form__title">Вводный урок</h4>
+        <span class="form__text form__text_adv">Попробуй любые направления бесплатно</span>
+        <input class="form__input_txt" type="text" name="name" placeholder="Имя">
+        <input class="form__input_txt" type="text" name="phone" placeholder="Телефон">
+        <select class="form__input_txt select" name="lessons" id="">
+          <option value="" style='display:none;'>Направления</option>
+          <option class="form__option" value="">Гитара</option>
+          <option class="form__option" value="">Вокал</option>
+          <option class="form__option" value="">Фортепиано</option>
+        </select>
+        <input class="form__btn" type="submit" value="Записаться">
+      </form>
+
+      <div id="map" class="map"></div>
+
+      <button class="promo__btn">Вводный урок</button>
+    </section>
+  </main>
+  
+<footer class="footer">
+  <span class="logo__footer">Diez</span>
+  <ul class="socials__list">
+    <li class="socials__item"><a href="#" class="socials__link">youtube</a></li>
+    <li class="socials__item"><a href="#" class="socials__link">instagram</a></li>
+    <li class="socials__item"><a href="#" class="socials__link">facebook</a></li>
+    <li class="socials__item"><a href="#" class="socials__link">vkontakte</a></li>
+  </ul>
+</footer>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
+
+<script type="text/javascript">
+  ymaps.ready(init);
+  function init(){
+    var myMap = new ymaps.Map("map", {
+      center: [59.941993, 30.279423],
+      zoom: 16,
+      controls: []
+});
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        hintContent: 'Diez',
+        balloonContent: 'Школа музыкального искусства'
+}, {
+      iconLayout: 'default#image',
+      iconImageHref: 'img/geotag.png',
+      iconImageSize: [17, 22],
+      iconImageOffset: [-10, -30]
+}),
+
+      myMap.geoObjects
+      .add(myPlacemark);
+
+  var toggler = document.getElementById('toggler');
+  toggler.addEventListener('click', mainNavVisibleToggle);
+  function mainNavVisibleToggle(e) {
+    e.preventDefault();
+    toggler.classList.toggle('toggler--close');
+    document.getElementById('nav').classList.toggle('nav--visible');
+}
+}
+</script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
