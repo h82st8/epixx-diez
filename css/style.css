@@ -367,52 +367,75 @@ body {
 }
 
 .slick-prev {
-  border: none;
-  background-color: rgba(0,0,0,0);
-  color: rgba(0,0,0,0);
-  width: 0;
-  height: 0;
-}
-.slick-prev:before {
   position: absolute;
-  top: 50%;
-  left: -5%;
   content: '';
-  display: inline-block;
-  width: 10px;
-  height: 10px;
+  border: none;
   border-top: 1px solid #eec643;
   border-left: 1px solid #eec643;
+  background-color: rgba(0,0,0,0);
   transform: rotate(-45deg);
+  font-size: 0;
+  top: 48%;
+  left: -6%;
+  width: 14px;
+  height: 14px;
 }
 
 .slick-next {
-  border: none;
-  background-color: rgba(0,0,0,0);
-  color: rgba(0,0,0,0);
-  width: 0;
-  height: 0;
-}
-
-.slick-next:after {
   position: absolute;
-  top: 50%;
-  right: -5%;
-  content: '';
-  display: inline-block;
-  width: 10px;
-  height: 10px;
+  top: 48%;
+  right: -6%;
+  border: none;
   border-top: 1px solid #eec643;
   border-left: 1px solid #eec643;
   transform: rotate(135deg);
+  background-color: rgba(0,0,0,0);
+  font-size: 0;
+  width: 14px;
+  height: 14px;
 }
 
-.video__wide {
-  display: none;
+.video__small {
+  display: flex!important;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 10px;
+  height: 168px;
+  background-repeat: no-repeat;
 }
 
-.video__inner {
-  display: none;
+.video__concert {
+  background-image: url(../img/video_card_img_1.png);
+}
+
+.solo {
+  background-image: url(../img/video_card_img_2.png);
+}
+
+.concert {
+  background-image: url(../img/video_card_img_3.png);
+}
+
+.bart {
+  background-image: url(../img/video_card_img_4.png);
+}
+
+.video__subtitle {
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: white;
+}
+
+.video__text {
+  display: inline-block;
+  line-height: 18px;
+  padding-bottom: 10px;
+  width: 95%;
+}
+
+.video__text_concert:before {
+  content: 'Финальный концерт 2018 года';
+  display: inline-block;
 }
 
 .address {
@@ -631,6 +654,7 @@ body {
 
 .lessons__lections {
   display: block;
+  padding-left: 30px;
   background-image: url(../img/directions_card_img_4.png);
   background-repeat: no-repeat;
   order: 1;
@@ -679,7 +703,7 @@ body {
 }
 
 .inner {
-  padding-left: 0;
+  padding-left: 30px;
 }
 
 .inner__text:before {
@@ -697,7 +721,6 @@ body {
 }
 
 .inner__text {
-  width: 55%;
   letter-spacing: 1px;
 }
 
@@ -748,9 +771,6 @@ body {
   text-transform: none;
   color: #fff;
   line-height: 40px;
-}
-
-.pl, .btn-text {
   padding-left: 30px;
 }
 
@@ -810,7 +830,6 @@ body {
 }
 
 .inner__text {
-  width: 95%;
   letter-spacing: 0;
 }
 
@@ -824,8 +843,10 @@ body {
   margin-bottom: 150px;
 }
 
-div.carousel {
-  display: none;
+.carousel {
+  height: 568px;
+  margin-left: 140px;
+  margin-right: 30px;
 }
 
 .wrap__title_video {
@@ -835,21 +856,30 @@ div.carousel {
 
 .title_video {
   position: absolute;
-  bottom: 40%;
-  left: -150%;
+  /*bottom: 40%;*/
+  top: 240px;
+  left: -155%;
   transform: rotate(-90deg);
 
   width: 550px;
 }
 
-.video__wide {
-  display: block;
+div.video__concert {
+  display: inline-block!important;
+  justify-content: flex-start;
   background-image: url(../img/video_card_wide_1.png);
   background-repeat: no-repeat;
   padding-left: 30px;
-  text-decoration: none;
-  width: 60%;
+  margin-right: 0px;
+  /*padding-right: 110px;*/
+  width: 69%;
   height: 568px;
+}
+
+.video__text_concert:after {
+  content: 'Заключительный зимний концерт 2017 годы выступало 97 учеников';
+  display: inline-block;
+  font-size: 18px;
 }
 
 .video__inner {
@@ -862,12 +892,15 @@ div.carousel {
 }
 
 .video__small {
+  position: absolute;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-end;
   text-decoration: none;
   height: 169px;
+  width: 24%;
+  margin-right: 0;
 }
 
 .video__subtitle {
@@ -882,6 +915,7 @@ div.carousel {
 .video__text {
   display: inline-block;
   font-size: 14px;
+  line-height: 18px;
   color: white;
   width: 100%;
 }
@@ -890,18 +924,24 @@ div.carousel {
   background-image: url(../img/video_card_img_2.png);
   background-repeat: no-repeat;
   padding-left: 10px;
+  right: 0;
+  top: 0;
 }
 
 .concert {
   background-image: url(../img/video_card_img_3.png);
   background-repeat: no-repeat;
   padding-left: 10px;
+  right: 0;
+  top: 35%;
 }
 
 .bart {
   background-image: url(../img/video_card_img_4.png);
   background-repeat: no-repeat;
   padding-left: 10px;
+  right: 0;
+  bottom: 0;
 }
 
 .contacts {
