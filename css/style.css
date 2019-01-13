@@ -301,38 +301,13 @@ body {
   color: white;
 }
 
-
-.inner__text {
+.inner__text_mb {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 22px;
   color: white;
   width: 80%;
-}
-
-.inner__text_vocal:before {
-  content: 'Пой как Селин Дион и Эми Вайнхаус';
-}
-
-.inner__text_guitar:before {
-  content: 'Начни играть как Джимми Хендрикс';
-}
-
-.inner__text_piano:before {
-  content: 'Чувствуй клавиши как Людовико Эйнауди';
-}
-
-.inner__text_team:before {
-  content: 'Учись только у профессионалов';
-}
-
-.inner__text_result:before {
-  content: 'Выступай на отчетных концертах';
-}
-
-.inner__text_studio:before {
-  content: 'Записывай песни каждый месяц';
 }
 
 .lessons__price {
@@ -426,6 +401,15 @@ body {
   color: white;
 }
 
+.inner__text_sldr {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  color: white;
+  width: 80%;
+}
+
 .video__text {
   display: inline-block;
   line-height: 18px;
@@ -433,8 +417,7 @@ body {
   width: 95%;
 }
 
-.video__text_concert:before {
-  content: 'Финальный концерт 2018 года';
+.video__text_concert {
   display: inline-block;
 }
 
@@ -615,6 +598,9 @@ body {
 }
 
 .lessons__guitar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   height: 269px;
   background-image: url(../img/directions_card_img_1.png);
   background-repeat: no-repeat;
@@ -629,6 +615,7 @@ body {
   background-image: url(../img/directions_card_img_2.png);
   background-repeat: no-repeat;
   order: 1;
+  padding: 0;
   width: 47%;
   padding-right: 0;
   margin-bottom: 30px;
@@ -706,8 +693,8 @@ body {
   padding-left: 30px;
 }
 
-.inner__text:before {
-  display: none;
+.inner__text_mb {
+  font-size: 0;
 }
 
 .subtitle, .lessons__all {
@@ -716,43 +703,56 @@ body {
   font-weight: bold;
 }
 
-.subtitle, .inner__text, .lessons__price, .btn-text {
+.subtitle, .inner__text_dsc, .lessons__price, .btn-text {
   margin-bottom: 15px;
 }
 
-.inner__text {
+.inner__text_dsc {
   letter-spacing: 1px;
 }
 
 .inner__text_vocal:after {
   content: 'Академический, рок, эстрадный, джазовый';
+  font-size: 20px;
+}
+
+.inner__text_guitar {
+  display: inline-block;
+  flex-grow: 1;
 }
 
 .inner__text_guitar:after {
   content: 'Хочешь играть как Джимми Хендрикс, Би Би Кинг или Андрес Сеговия - мы научим';
+  font-size: 20px;
 }
 
 .inner__text_piano:after {
   content: 'Академический, рок, эстрадный, джазовый';
+  font-size: 20px;
 }
 
 .inner__text_team:after {
   content: 'Тебя будут обучать профессионалы с высшим музыкальным образованием';
+  font-size: 20px;
 }
 
 .inner__text_result:after {
   content: 'Выступи на отчетном концерте через три месяца обучения';
+  font-size: 20px;
 }
 
 .inner__text_studio:after {
+  display: inline-block;
   content: 'Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно';
+  font-size: 20px;
+  padding-right: 20px;
 }
 
 .btn-text {
   margin-top: 30px;
 }
 
-.inner__text, .lessons__price {
+.inner__text_dsc, .lessons__price {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 28px;
@@ -774,7 +774,8 @@ body {
   padding-left: 30px;
 }
 
-.lection_txt {
+.lection_txt:after {
+  content: 'Подтяни свои знания в теории музыки';
   width: 90%;
 }
 
@@ -876,6 +877,7 @@ div.video__concert {
   height: 568px;
 }
 
+
 .video__text_concert:after {
   content: 'Заключительный зимний концерт 2017 годы выступало 97 учеников';
   display: inline-block;
@@ -918,6 +920,10 @@ div.video__concert {
   line-height: 18px;
   color: white;
   width: 100%;
+}
+
+.video__text_concert {
+  font-size: 0;
 }
 
 .solo {
