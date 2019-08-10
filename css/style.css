@@ -405,11 +405,11 @@ section .inner {
   padding-left: 10px;
   height: 168px;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .video__concert {
   background-image: url(../img/video_card_img_1.png);
-  background-size: cover;
 }
 
 .solo {
