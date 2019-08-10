@@ -23,15 +23,20 @@
 }
 
 body {
-  width: 320px;
   margin: 0 auto;
 }
 
 .total_wrapper {
-  padding: 5% 22px 2% 22px;
+  padding: 0 7% 2% 7%;
 
+}
+
+.header_promo__bckgrnd {
+  padding: 5% 7% 5% 7%;
   background-image: url(../img/bg_main.png);
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .title__full, .footer{
@@ -142,6 +147,10 @@ body {
   text-transform: uppercase;
 }
 
+.promo__wrap {
+  width: 65%;
+}
+
 .promo_title, .logo_header {
   font-family: "Prata", serif;
   font-size: 32px;
@@ -217,6 +226,11 @@ body {
   justify-content: space-between;
 }
 
+section .inner {
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
 .lessons__vocal {
   background-image: url(../img/lessons_card_img_1.png);
   background-repeat: no-repeat;
@@ -290,6 +304,10 @@ body {
 .inner__small {
   display: block;
   width: 73%;
+  height: 144px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .subtitle {
@@ -312,6 +330,16 @@ body {
 
 .lessons__price {
   display: none;
+}
+
+.advantages__col_2 {
+  width: 100%;
+}
+
+.advantages__col_2 .inner {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .advantages__team {
@@ -381,6 +409,7 @@ body {
 
 .video__concert {
   background-image: url(../img/video_card_img_1.png);
+  background-size: cover;
 }
 
 .solo {
@@ -438,24 +467,44 @@ body {
   margin-bottom: 16px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 375px) {
+  .lessons__all {
+    left: -30%;
+}
+
+  .advantages__trial {
+    left: -10%;
+  }
+}
+
+@media (min-width: 500px) {
+  .lessons__all {
+    left: -10%;
+}
+
+  .advantages__trial {
+    left: 10%;
+  }
+}
+
+
+@media (min-width: 769px) {
 .nav, .footer {
   display: block;
 }
 
 body {
-  width: 1280px;
   margin: 0 auto;
 }
 
-.total_wrapper {
+.header_promo__bckgrnd {
+  padding: 4%;
   background-image: url(../img/bg_main_big.png);
   background-repeat: no-repeat;
 }
 
-.logo_header {
-  margin: -35px;
-  margin-left: 30px;
+.total_wrapper {
+  padding: 4%;
 }
 
 .nav {
@@ -465,17 +514,13 @@ body {
 
 .nav__list {
   padding-top: 0;
-  margin-top: 0;
+  margin-top: 30px;
   margin-right: 20px;
 }
 
 .nav__item {
   display: inline-block;
   letter-spacing: 1px;
-}
-
-.nav__item:last-child {
-  margin-right: 35px;
 }
 
 .nav__link {
@@ -494,8 +539,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  padding: 0 30px 135px 30px;
 }
 
 .promo__wrap {
@@ -524,7 +567,7 @@ body {
   position: relative;
   margin-top: 150px;
   padding: 0 20px;
-  width: 270px;
+  width: 25%;
   height: 420px;
   box-sizing: border-box;
   border: 1px solid #021a23;
@@ -537,7 +580,6 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-weight: bold;
-  line-height: 40px;
   color: #021a23;
 }
 
@@ -547,7 +589,6 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: normal;
-  line-height: 28px;
 }
 
 .form__input_txt {
@@ -589,36 +630,40 @@ body {
 }
 
 .lessons {
-  margin-top: 100px;
-  margin-left: 100px;
+  margin-left: 5%;
 }
 
 .section__container {
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .lessons__guitar {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  order: 0;
+  width: 42%;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  padding: 0;
   height: 269px;
   background-image: url(../img/directions_card_img_1.png);
   background-repeat: no-repeat;
-  order: 0;
-  width: 39%;
-  padding: 0;
-  margin-bottom: 30px;
-  margin-left: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .lessons__vocal {
   background-image: url(../img/directions_card_img_2.png);
   background-repeat: no-repeat;
   order: 1;
-  padding: 0;
-  width: 47%;
-  padding-right: 0;
   margin-bottom: 30px;
+  padding: 0;
+  width: 53%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .lessons__piano {
@@ -629,24 +674,29 @@ body {
   padding: 0;
   margin-bottom: 30px;
   margin-left: 30px;
-
-  width: 39%;
+  width: 42%;
 }
 
 .section__btn {
   height: 269px;
   order: 1;
-  width: 24%;
+  width: 26%;
 }
 
 .lessons__lections {
   display: block;
+  order: 1;
   padding-left: 30px;
+  width: 26%;
+  height: 269px;
   background-image: url(../img/directions_card_img_4.png);
   background-repeat: no-repeat;
-  order: 1;
-  width: 21%;
+  -webkit-background-size: cover;
+  background-size: cover;
   text-decoration: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .btn-text {
@@ -660,7 +710,9 @@ body {
   top: 0%;
 }
 
-.lessons__lections, .inner, .inner__small {
+.lessons__lections,
+.inner,
+.inner__small {
   padding-right: 30px;
 }
 
@@ -684,7 +736,7 @@ body {
 .title__lessons {
   position: absolute;
   transform: rotate(-90deg);
-  left: -28%;
+  left: -34%;
   bottom: 44%;
   width: 560px;
 }
@@ -771,7 +823,7 @@ body {
   text-transform: none;
   color: #fff;
   line-height: 40px;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .lection_txt:after {
@@ -780,15 +832,24 @@ body {
 }
 
 .advantages {
-  margin: 30px 30px;
+  margin: 30px 0;
   display: flex;
   justify-content: space-between;
 }
 
 .advantages__col_2 {
-  width: 48.5%;
+  width: 48%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advantages__col_2 .inner {
+  padding-right: 10px;
+  width: 48%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .title__advantages {
@@ -799,11 +860,9 @@ body {
 
 .advantages__team {
   margin-bottom: 0;
-  margin-right: 42px;
   padding-right: 0;
   padding-top: 0;
   padding-left: 30px;
-  width: 41%;
   height: 468px;
   background-image: url(../img/advantages_card_wide_1.png);
   background-repeat: no-repeat;
@@ -814,7 +873,6 @@ body {
   padding-right: 0;
   padding-top: 0;
   padding-left: 30px;
-  width: 41%;
   background-image: url(../img/advantages_card_wide_2.png);
   background-repeat: no-repeat;
 }
@@ -825,9 +883,13 @@ body {
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 30px;
-  width: 20.5%;
+  width: 25%;
+  height: auto;
   background-image: url(../img/advantages_card_wide_3.png);
   background-repeat: no-repeat;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .inner__text {
@@ -845,24 +907,22 @@ body {
 }
 
 .carousel {
+  margin-left: 5%;
   height: 568px;
-  margin-left: 140px;
-  margin-right: 30px;
 }
 
-.wrap__title_video {
+.video {
   position: relative;
-  width: 11%;
+  justify-content: flex-end;
 }
 
 .title_video {
   position: absolute;
-  /*bottom: 40%;*/
   top: 240px;
-  left: -155%;
+  left: -25%;
+  width: 550px;
   transform: rotate(-90deg);
 
-  width: 550px;
 }
 
 div.video__concert {
@@ -872,8 +932,7 @@ div.video__concert {
   background-repeat: no-repeat;
   padding-left: 30px;
   margin-right: 0px;
-  /*padding-right: 110px;*/
-  width: 69%;
+  width: 71%;
   height: 568px;
 }
 
@@ -899,10 +958,15 @@ div.video__concert {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-end;
-  text-decoration: none;
-  height: 169px;
-  width: 24%;
   margin-right: 0;
+  padding-right: 10px;
+  height: 169px;
+  width: 28%;
+  background-size: cover;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .video__subtitle {
@@ -952,7 +1016,7 @@ div.video__concert {
 
 .contacts {
   position: relative;
-  margin: 50px 30px 0 30px;
+  margin-top: 50px;
 }
 
 .title__address {
@@ -965,7 +1029,7 @@ div.video__concert {
   width: 20%;
 }
 
-.video__form {
+.contacts__form {
   width: 25%;
   position: absolute;
   top: 0;
@@ -1011,5 +1075,150 @@ div.video__concert {
   text-transform: uppercase;
   color: black;
 }
+}
 
+@media (min-width: 769px) and (max-width: 1023px) {
+  .inner {
+    padding-left: 10px;
+  }
+
+  .form__trial {
+    padding: 0 10px;
+  }
+
+  .btn-text {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .title__lessons {
+    left: -44%;
+  }
+
+  .title_video {
+    left: -35%;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 870px) {
+
+  .title__lessons {
+    left: -41%;
+  }
+
+  .title_video {
+    left: -33%;
+  }
+}
+
+@media (min-width: 871px) and (max-width: 920px) {
+
+  .title__lessons {
+    left: -39%;
+  }
+
+  .title_video {
+    left: -30%;
+  }
+}
+
+@media (min-width: 921px) and (max-width: 980px) {
+
+  .title__lessons {
+    left: -37%;
+  }
+
+  .title_video {
+    left: -28%;
+  }
+}
+
+@media (min-width: 981px) and (max-width: 1023px) {
+
+  .title__lessons {
+    left: -35%;
+  }
+
+  .title_video {
+    left: -26%;
+  }
+}
+
+
+
+@media (min-width: 1080px) and (max-width: 1130px) {
+
+  .title__lessons {
+    left: -32%;
+  }
+
+  .title_video {
+    left: -24%;
+  }
+}
+
+@media (min-width: 1131px) and (max-width: 1300px) {
+
+  .title__lessons {
+    left: -30%;
+  }
+
+  .title_video {
+    left: -22%;
+  }
+}
+
+@media (min-width: 1301px) and (max-width: 1439px) {
+
+  .title__lessons {
+    left: -28%;
+  }
+
+  .title_video {
+    left: -20%;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+
+  .title__lessons {
+    left: -25%;
+  }
+
+  .title_video {
+    left: -18%;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1999px) {
+
+  .title__lessons {
+    left: -22%;
+  }
+
+  .title_video {
+    left: -15%;
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 2559px) {
+
+  .title__lessons {
+    left: -19%;
+  }
+
+  .title_video {
+    left: -12%;
+  }
+}
+
+@media (min-width: 2560px) {
+
+  .title__lessons {
+    left: -16%;
+  }
+
+  .title_video {
+    left: -10%;
+  }
 }

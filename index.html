@@ -12,7 +12,7 @@
 
 <body>
 
-<div class="total_wrapper">
+<div class="header_promo__bckgrnd">
   <header class="header">
     <span class="logo_header">Diez</span>
     <a href="#" class="toggler" id="toggler"><span></span></a>
@@ -26,156 +26,153 @@
     </nav>
   </header>
 
-  <main class="main">
-  
-    <section class="promo">
-      <div class="promo__wrap">
-        <h1 class="promo_title"><span class="title__full">Diez &#8212; </span><span class="title__first-letter"> ш</span>кола музыкального искусства</h1>
-        <span class="slogan">Научим петь, играть на инструментах, получать удовольствие от музыки и не бояться сцены</span>
-      </div>
-      <button class="promo__btn">Вводный урок</button>
-      <form class="form__trial">
-        <h4 class="form__title">Вводный урок</h4>
-        <span class="form__text">Попробуй любые направления бесплатно</span>
-        <input class="form__input_txt" type="text" name="name" placeholder="Имя">
-        <input class="form__input_txt" type="text" name="phone" placeholder="Телефон">
-        <select class="form__input_txt select" name="lessons" id="">
-          <option value="" style='display:none;'>Направления</option>
-          <option class="form__option" value="">Гитара</option>
-          <option class="form__option" value="">Вокал</option>
-          <option class="form__option" value="">Фортепиано</option>
-        </select>
-        <input class="form__btn form__btn_promo" type="submit" value="Записаться">
-      </form>
-    </section>
+  <section class="promo">
+    <div class="promo__wrap">
+      <h1 class="promo_title"><span class="title__full">Diez &#8212; </span><span class="title__first-letter"> ш</span>кола музыкального искусства</h1>
+      <span class="slogan">Научим петь, играть на инструментах, получать удовольствие от музыки и не бояться сцены</span>
+    </div>
+    <button class="promo__btn">Вводный урок</button>
+    <form class="form__trial">
+      <h4 class="form__title">Вводный урок</h4>
+      <span class="form__text">Попробуй любые направления бесплатно</span>
+      <input class="form__input_txt" type="text" name="name" placeholder="Имя">
+      <input class="form__input_txt" type="text" name="phone" placeholder="Телефон">
+      <select class="form__input_txt select" name="lessons" id="">
+        <option value="" style='display:none;'>Направления</option>
+        <option class="form__option" value="">Гитара</option>
+        <option class="form__option" value="">Вокал</option>
+        <option class="form__option" value="">Фортепиано</option>
+      </select>
+      <input class="form__btn form__btn_promo" type="submit" value="Записаться">
+    </form>
+  </section>
+</div>
+
+<div class="total_wrapper">
+  <section id="lessons" class="section__container lessons">
+    <h2 class="title title__lessons">Растим музыкантов</h2>
+    
+    <div class="lessons__vocal inner">
+      <h3 class="subtitle">Вокал</h3>
+      <span class="inner__text_mb inner__text_vocal">Пой как Селин Дион и Эми Вайнхаус</span>
+    </div>
+    
+    <div class="lessons__guitar inner">
+      <h3 class="subtitle">Гитара</h3>
+      <span class="inner__text_mb inner__text_guitar">Начни играть как Джимми Хендрикс</span>
+      <span class="lessons__price">1 урок от 800&#8381;</span>
+    </div>
+    
+    <div class="lessons__piano inner inner__small">
+      <h3 class="subtitle">Фортепиано</h3>
+      <span class="inner__text_mb inner__text_piano">Чувствуй клавиши как Людовико Эйнауди</span>
+    </div>
+    
+    <div class="lessons__lections">
+      <h3 class="subtitle">Лекции</h3>
+      <span class="inner__text_dsc lection_txt"></span>
+    </div>
+    
+    <button class="section__btn">
+      <span class="lessons__all btn-text">Все<br>направления</span>
+    </button>
+  </section>
+
+  <section id="advantages" class="section__container advantages">
+    <div class="advantages__col_2">
+      <h2 class="title title__advantages">Задаем темп</h2>
+    
+    <div class="advantages__team inner">
+      <h3 class="subtitle">Состав</h3>
+      <span class="inner__text_mb inner__text_team">Учись только у профессионалов</span>
+    </div>
+    
+    <div class="advantages__result inner">
+      <h3 class="subtitle">Результат</h3>
+      <span class="inner__text_mb inner__text_result">Выступай на отчетных концертах</span>
+    </div>
+    </div>
+    
+    <div class="advantages__studio inner inner__small">
+      <h3 class="subtitle">Студия</h3>
+      <span class="inner__text_mb inner__text_studio">Записывай песни каждый месяц</span>
+    </div>
+
+    <form class="form__trial advantages__form">
+      <h4 class="form__title">Вводный урок</h4>
+      <span class="form__text form__text_adv">Попробуй любые направления бесплатно</span>
+      <input class="form__input_txt" type="text" name="name" placeholder="Имя">
+      <input class="form__input_txt" type="text" name="phone" placeholder="Телефон">
+      <select class="form__input_txt select" name="lessons" id="">
+        <option value="" style='display:none;'>Направления</option>
+        <option class="form__option" value="">Гитара</option>
+        <option class="form__option" value="">Вокал</option>
+        <option class="form__option" value="">Фортепиано</option>
+      </select>
+      <input class="form__btn" type="submit" value="Записаться">
+    </form>
+    
+    <button class="section__btn advantages__btn">
+      <span class="advantages__trial btn-text">Вводный<br>урок</span>
+    </button>
+  </section>
+
+  <section id="video" class="section__container video">
+    
+    <h2 class="title title_video">В стенах школы</h2>
       
-    <section id="lessons" class="section__container lessons">
-      <h2 class="title title__lessons">Растим музыкантов</h2>
+    <div class="carousel">
       
-      <div class="lessons__vocal inner">
-        <h3 class="subtitle">Вокал</h3>
-        <span class="inner__text_mb inner__text_vocal">Пой как Селин Дион и Эми Вайнхаус</span>
-      </div>
-      
-      <div class="lessons__guitar inner">
-        <h3 class="subtitle">Гитара</h3>
-        <span class="inner__text_mb inner__text_guitar">Начни играть как Джимми Хендрикс</span>
-        <span class="lessons__price">1 урок от 800&#8381;</span>
+      <div class="video__concert video__small">
+        <h3 class="subtitle subtitle_video">Зимняя вишня</h3>
+        <span class="inner__text_sldr video__text video__text_concert">
+        Финальный концерт 2018 года
+        </span>
       </div>
       
-      <div class="lessons__piano inner inner__small">
-        <h3 class="subtitle">Фортепиано</h3>
-        <span class="inner__text_mb inner__text_piano">Чувствуй клавиши как Людовико Эйнауди</span>
+      <div class="video__small solo">
+        <h3 class="subtitle video__subtitle">Янг Чжо</h3>
+        <span class="inner__text_sldr video__text">Репетиция сольной партии скрипки</span>
       </div>
       
-      <div class="lessons__lections">
-        <h3 class="subtitle">Лекции</h3>
-        <span class="inner__text_dsc lection_txt"></span>
+      <div class="video__small concert">
+        <h3 class="subtitle video__subtitle">Летний стиль</h3>
+        <span class="inner__text_sldr video__text">За кулисами концерта</span>
       </div>
       
-      <button class="section__btn">
-        <span class="lessons__all btn-text">Все<br>направления</span>
-      </button>
-    </section>
-
-    <section id="advantages" class="section__container advantages">
-      <div class="advantages__col_2">
-        <h2 class="title title__advantages">Задаем темп</h2>
-      
-      <div class="advantages__team inner">
-        <h3 class="subtitle">Состав</h3>
-        <span class="inner__text_mb inner__text_team">Учись только у профессионалов</span>
+      <div class="video__small bart">
+        <h3 class="subtitle video__subtitle">Сергей Трофимов</h3>
+        <span class="inner__text_sldr video__text">ЛЮБЭ - Выйду в поле с конем</span>
       </div>
-      
-      <div class="advantages__result inner">
-        <h3 class="subtitle">Результат</h3>
-        <span class="inner__text_mb inner__text_result">Выступай на отчетных концертах</span>
-      </div>
-      </div>
-      
-      <div class="advantages__studio inner inner__small">
-        <h3 class="subtitle">Студия</h3>
-        <span class="inner__text_mb inner__text_studio">Записывай песни каждый месяц</span>
-      </div>
+    </div>
 
-      <form class="form__trial advantages__form">
-        <h4 class="form__title">Вводный урок</h4>
-        <span class="form__text form__text_adv">Попробуй любые направления бесплатно</span>
-        <input class="form__input_txt" type="text" name="name" placeholder="Имя">
-        <input class="form__input_txt" type="text" name="phone" placeholder="Телефон">
-        <select class="form__input_txt select" name="lessons" id="">
-          <option value="" style='display:none;'>Направления</option>
-          <option class="form__option" value="">Гитара</option>
-          <option class="form__option" value="">Вокал</option>
-          <option class="form__option" value="">Фортепиано</option>
-        </select>
-        <input class="form__btn" type="submit" value="Записаться">
-      </form>
-      
-      <button class="section__btn advantages__btn">
-        <span class="advantages__trial btn-text">Вводный<br>урок</span>
-      </button>
-    </section>
+  </section>
 
-    <section id="video" class="section__container video">
-      <div class="wrap__title_video">
-        <h2 class="title title_video">В стенах школы</h2>
-      </div>
-        
-      <div class="carousel">
-        
-        <div class="video__concert video__small">
-          <h3 class="subtitle subtitle_video">Зимняя вишня</h3>
-          <span class="inner__text_sldr video__text video__text_concert">
-          Финальный концерт 2018 года
-          </span>
-        </div>
-        
-        <div class="video__small solo">
-          <h3 class="subtitle video__subtitle">Янг Чжо</h3>
-          <span class="inner__text_sldr video__text">Репетиция сольной партии скрипки</span>
-        </div>
-        
-        <div class="video__small concert">
-          <h3 class="subtitle video__subtitle">Летний стиль</h3>
-          <span class="inner__text_sldr video__text">За кулисами концерта</span>
-        </div>
-        
-        <div class="video__small bart">
-          <h3 class="subtitle video__subtitle">Сергей Трофимов</h3>
-          <span class="inner__text_sldr video__text">ЛЮБЭ - Выйду в поле с конем</span>
-        </div>
-      </div>
-
-    </section>
-
-    <section id="contacts" class="section contacts">
-      <h2 class="title title__address">Ждем тебя</h2>
-      <span class="address">СПб, 6-я Линия ВО 42
-+7 (812) 566 56 56</span>
+  <section id="contacts" class="section contacts">
+    <h2 class="title title__address">Ждем тебя</h2>
+    <span class="address">СПб, 6-я Линия ВО 42 +7 (812) 566 56 56</span>
 
 
 
 
-      <form class="form__trial advantages__form video__form">
-        <h4 class="form__title">Вводный урок</h4>
-        <span class="form__text form__text_adv">Попробуй любые направления бесплатно</span>
-        <input class="form__input_txt" type="text" name="name" placeholder="Имя">
-        <input class="form__input_txt" type="text" name="phone" placeholder="Телефон">
-        <select class="form__input_txt select" name="lessons" id="">
-          <option value="" style='display:none;'>Направления</option>
-          <option class="form__option" value="">Гитара</option>
-          <option class="form__option" value="">Вокал</option>
-          <option class="form__option" value="">Фортепиано</option>
-        </select>
-        <input class="form__btn" type="submit" value="Записаться">
-      </form>
+    <form class="form__trial advantages__form contacts__form">
+      <h4 class="form__title">Вводный урок</h4>
+      <span class="form__text form__text_adv">Попробуй любые направления бесплатно</span>
+      <input class="form__input_txt" type="text" name="name" placeholder="Имя">
+      <input class="form__input_txt" type="text" name="phone" placeholder="Телефон">
+      <select class="form__input_txt select" name="lessons" id="">
+        <option value="" style='display:none;'>Направления</option>
+        <option class="form__option" value="">Гитара</option>
+        <option class="form__option" value="">Вокал</option>
+        <option class="form__option" value="">Фортепиано</option>
+      </select>
+      <input class="form__btn" type="submit" value="Записаться">
+    </form>
 
-      <div id="map" class="map"></div>
+    <div id="map" class="map"></div>
 
-      <button class="promo__btn">Вводный урок</button>
-    </section>
-  </main>
+    <button class="promo__btn">Вводный урок</button>
+  </section>
   
   <footer class="footer">
     <span class="logo">Diez</span>
